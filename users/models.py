@@ -13,8 +13,8 @@ class User(AbstractUser):
     (GANDER_OTHER , "Other")
     )
 
-    bio = models.TextField(default="",null=True,blank=True)
-    avatar = models.ImageField(null = True,blank = True)
-    birthday = models.DateField(null = True,blank = True)
-    gander = models.CharField(choices=GANDER_CHOICE,max_length=10,null = True,blank = True)
+    bio = models.TextField(default="",blank=True)
+    avatar = models.ImageField(blank = True)
+    birthday = models.DateField(null = True, blank = True)
+    gander = models.CharField(choices=GANDER_CHOICE,max_length=10,blank = True)
     
